@@ -1,13 +1,18 @@
 require('dotenv/config');
 
 module.exports = {
-  dialect: 'mysql',
-  host: process.env.DB_HOST,
-  usename: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  define: {
-    timestamps: true,
-    underscored: true,
+  production: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: 'mysql',
+  },
+  development: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: 'mysql',
   },
 };
