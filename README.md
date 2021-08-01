@@ -50,3 +50,13 @@ Abra outra aba ou terminal e acesse seu frontend: `cd front-end`
 
 Instale as dependências: `yarn install`
 Execute o frontend: `yarn start`
+
+## Possíveis problemas:
+
+Caso haja algum erro ou warning impendindo a execução tanto do front-end quando do back-end tente executar em seu terminal:
+
+```
+export NODE_ENV=development
+```
+
+Para mais dúvidas podem me contatar: nicolas.oliveira.ug@gmail.com. :)
