@@ -10,10 +10,9 @@ import Comment from '../models/Comment';
 
 const textToSpeech = new TextToSpeechV1({
   authenticator: new IamAuthenticator({
-    apikey: 'vn8ycbVVi9U3Y0VJ6OqHYg33Dhn4RaFhirdfwflmcl7e',
+    apikey: process.env.API_KEY_WATSON,
   }),
-  serviceUrl:
-    'https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/c6b19517-e349-4ad0-bc26-1e72ba1b5d43',
+  serviceUrl: process.env.API_URL_WATSON,
 });
 
 class CommentController {
