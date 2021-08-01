@@ -1,0 +1,126 @@
+*,
+html {
+  margin: 0;
+  bottom: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  line-height: 2em;
+  font-family: "IBM Plex Sans", sans-serif, monospace;
+
+  @media (min-width: 2560px) {
+    font-size: 18px;
+  }
+  @media (max-width: 2560px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 10px;
+  }
+  @media (max-width: 320px) {
+    font-size: 8px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1em;
+  gap: 2em;
+}
+
+.container .line {
+  border-left: 2px solid rgb(112, 112, 112);
+  height: 500px;
+}
+
+.container button {
+  background-color: #0f62fe;
+  text-align: center;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #0d49b8;
+}
+
+.container button:disabled {
+  opacity: 0.4;
+  cursor: wait;
+}
+
+.container button#submit {
+  padding: 10px;
+  width: 100%;
+}
+
+.container .input,
+.container .list {
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.container textarea {
+  resize: none;
+  width: 40vw;
+  height: 20vh;
+}
+.container .list {
+  width: 100%;
+}
+
+.container .list .comment {
+  background-color: rgb(219, 219, 219);
+  padding: 1em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .list .comment audio {
+  display: none;
+}
+
+.container .list .comment #buttonIcon {
+  background-color: #0f62fe;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+svg {
+  width: 1em;
+}
+
+.container .list .comment #buttonIcon:hover {
+  background-color: #0d49b8;
+}

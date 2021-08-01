@@ -18,4 +18,4 @@ MYSQL_ROOT_PASSWORD: "root"
 
 Coloque a mesma configuração dentro do arquivo `.env-exemple` e renomeie o arquivo para `.env`.
 
-Primeiro você deve executar o seu back-end através do docker-compose: `docker-compose up`
+Primeiro você deve executar o seu back-end através do docker-compose: `docker-compose up --build -d `
